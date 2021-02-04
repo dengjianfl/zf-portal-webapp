@@ -1,8 +1,17 @@
 <template>
   <div class="home">
     <HomeHeader :category="category" @setCurrentCategory="setCurrentCategory"></HomeHeader>
-    {{category}}
-    <HomeSwiper></HomeSwiper>
+    <!-- 轮播图 -->
+    <Suspense>
+      <template #default>
+        <HomeSwiper></HomeSwiper>
+      </template>
+      <template #fallback>
+        <div>loading...</div>
+      </template>
+    </Suspense>
+    
+    <!-- 课程列表 -->
     <HomeList></HomeList>
   </div>
 </template>
