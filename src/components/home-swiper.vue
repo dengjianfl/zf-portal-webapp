@@ -29,5 +29,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scope>
-
+.my-swipe{
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
 </style>

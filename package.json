@@ -10,6 +10,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
     "vant": "^3.0.6",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",

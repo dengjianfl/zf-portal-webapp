@@ -28,17 +28,14 @@ import * as Types from '@/store/action-types'
 
 function useCategory(store: Store<IGlobalState>) {
   let category = computed(() => store.state.home.currentCategory);
-
   function setCurrentCategory(category: CATOGORY_TYPES) {
     store.commit(`home/${Types.SET_CATEGORY}`, category)
   }
-
   return {
     category,
     setCurrentCategory
   }
 }
-
 
 export default defineComponent({
   components:{
